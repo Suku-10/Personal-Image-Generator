@@ -53,7 +53,8 @@ const ImageGenerator = () => {
             responseType: 'blob',
             headers: {
                 'x-rapidapi-key': apiKey,
-                'x-rapidapi-host': 'ai-text-to-image-generator-flux-free-api.p.rapidapi.com'
+                'x-rapidapi-host': 'ai-text-to-image-generator-flux-free-api.p.rapidapi.com',
+                'Content-Type': 'application/x-www-form-urlencoded'
             }
         };
 
