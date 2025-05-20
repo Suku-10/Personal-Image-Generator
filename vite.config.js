@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
   tailwindcss(),
   ],
-  base:"/AI-Image-Generator-using-React"
+  base: '/Personal-Image-Generator/',
 })
