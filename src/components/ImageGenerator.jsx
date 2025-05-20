@@ -37,16 +37,23 @@ const ImageGenerator = () => {
         const options = {
             method: 'GET',
             url: apiUrl,
-            params: {
+            // params: {
+            //     prompt: finalPrompt,
+            //     width: '1324',
+            //     height: '1024',
+            //     seed: '123456'
+            // },
+            params: new URLSearchParams({
                 prompt: finalPrompt,
-                width: '1324',
+                width: '1024',
                 height: '1024',
-                seed: '123456'
-            },
+                seed: '918440',
+                model: 'flux'
+            }),
             responseType: 'blob',
             headers: {
                 'x-rapidapi-key': apiKey,
-                'x-rapidapi-host': 'ai-text-to-image-generator1.p.rapidapi.com'
+                'x-rapidapi-host': 'ai-text-to-image-generator-flux-free-api.p.rapidapi.com'
             }
         };
 
