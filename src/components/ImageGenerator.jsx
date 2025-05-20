@@ -13,6 +13,7 @@ const ImageGenerator = () => {
 
     const apiKey = import.meta.env.VITE_API_KEY
     const apiUrl = import.meta.env.VITE_API_URL
+    const apiHost = import.meta.env.VITE_API_HOST
 
 
     // useEffect hook to update button text based on input text
@@ -46,7 +47,7 @@ const ImageGenerator = () => {
             responseType: 'blob',
             headers: {
                 'x-rapidapi-key': apiKey,
-                'x-rapidapi-host': 'ai-text-to-image-generator1.p.rapidapi.com'
+                'x-rapidapi-host': apiHost,
             }
         };
 
