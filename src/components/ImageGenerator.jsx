@@ -11,8 +11,8 @@ const ImageGenerator = () => {
     const [loading, setLoading] = useState(false); // State for loading status
     const [buttonText, setButtonText] = useState('Random Image Generate'); // State for button text
 
-    const apiKey = import.meta.env.VITE_API_KEY
-    const apiUrl = import.meta.env.VITE_API_URL
+    const apiKey = import.meta.env.VITE_API_KEY1
+    const apiUrl = import.meta.env.VITE_API_URL1
 
 
     // useEffect hook to update button text based on input text
