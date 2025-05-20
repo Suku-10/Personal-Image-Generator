@@ -11,8 +11,8 @@ const ImageGenerator = () => {
     const [loading, setLoading] = useState(false); // State for loading status
     const [buttonText, setButtonText] = useState('Random Image Generate'); // State for button text
 
-    const apiKey = "1ec30dfdafmsh8d4ee659dcd55ddp142d34jsn790b69c1cf23"
-    const apiUrl = "https://ai-text-to-image-generator1.p.rapidapi.com/generate-image"
+    const apiKey = import.meta.env.VITE_API_KEY
+    const apiUrl = import.meta.env.VITE_API_URL
 
 
     // useEffect hook to update button text based on input text
