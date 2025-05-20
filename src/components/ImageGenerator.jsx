@@ -11,8 +11,8 @@ const ImageGenerator = () => {
     const [loading, setLoading] = useState(false); // State for loading status
     const [buttonText, setButtonText] = useState('Random Image Generate'); // State for button text
 
-    const apiKey = import.meta.env.VITE_API_KEY1
-    const apiUrl = import.meta.env.VITE_API_URL1
+    const apiKey = import.meta.env.VITE_API_KEY
+    const apiUrl = import.meta.env.VITE_API_URL
 
 
     // useEffect hook to update button text based on input text
@@ -37,24 +37,16 @@ const ImageGenerator = () => {
         const options = {
             method: 'GET',
             url: apiUrl,
-            // params: {
-            //     prompt: finalPrompt,
-            //     width: '1324',
-            //     height: '1024',
-            //     seed: '123456'
-            // },
-            params: new URLSearchParams({
+            params: {
                 prompt: finalPrompt,
-                width: '1024',
+                width: '1324',
                 height: '1024',
-                seed: '918440',
-                model: 'flux'
-            }),
+                seed: '123456'
+            },
             responseType: 'blob',
             headers: {
                 'x-rapidapi-key': apiKey,
-                'x-rapidapi-host': 'ai-text-to-image-generator-flux-free-api.p.rapidapi.com',
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'x-rapidapi-host': 'ai-text-to-image-generator1.p.rapidapi.com'
             }
         };
 
